@@ -1,3 +1,3 @@
-# TechUt
-Odpalanie serwera i clienta w hsql.
-Aby zainicjować należy uruchomić skrypt runHSQLDBServer.sh, następnie w innym terminalu analogicznie runHSQLDBClient.sh.
+Aby zainicjować działanie programu należy:
+1. Uruchomić skrypt runSQLDBServer.sh
+2. Następnie w innym terminalu uruchomić runSQLDBClient.sh
