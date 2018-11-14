@@ -1,4 +1,4 @@
-package aformela.zad02.test;
+package aformela.zad03.test;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 import java.sql.SQLException;
 import java.util.List;
 
-import aformela.zad02.domain.Bird;
-import aformela.zad02.service.BirdService;
+import aformela.zad03.domain.Bird;
+import aformela.zad03.service.BirdService;
 
 public class BirdServiceTest {
 	BirdService bs = new BirdService();

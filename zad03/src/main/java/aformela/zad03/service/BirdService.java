@@ -1,9 +1,9 @@
-package aformela.zad02.service;
+package aformela.zad03.service;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import aformela.zad02.domain.Bird;
+import aformela.zad03.domain.Bird;
 
 public class BirdService {
 	private Connection connection;
