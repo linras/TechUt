@@ -1,4 +1,4 @@
-Zadanie z transakcjami
+Zadanie z modelowaniem dziedziny
 
 Aby zainicjować działanie programu należy:
 1. Uruchomić skrypt runSQLDBServer.sh
