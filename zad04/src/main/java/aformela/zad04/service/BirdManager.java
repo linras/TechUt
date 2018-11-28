@@ -1,8 +1,8 @@
-package aformela.zad03.service;
+package aformela.zad04.service;
 
 import java.util.List;
 
-import aformela.zad03.domain.Bird;
+import aformela.zad04.domain.Bird;
 
 public interface BirdManager {
 

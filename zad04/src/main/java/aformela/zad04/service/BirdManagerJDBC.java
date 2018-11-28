@@ -1,4 +1,4 @@
-package aformela.zad03.service;
+package aformela.zad04.service;
 
 public class BirdManagerJDBC {
 

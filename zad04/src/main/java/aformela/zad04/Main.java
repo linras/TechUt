@@ -1,11 +1,11 @@
-package aformela.zad03;
+package aformela.zad04;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import aformela.zad03.domain.Bird;
-import aformela.zad03.service.BirdService;
+import aformela.zad04.domain.Bird;
+import aformela.zad04.service.BirdService;
 
 public class Main {
 	public static void main(String[] args) throws SQLException {

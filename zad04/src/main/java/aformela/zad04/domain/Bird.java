@@ -1,18 +1,20 @@
-package aformela.zad03.domain;
+package aformela.zad04.domain;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.*;
+
+
+@Entity
 public class Bird {
-
-	@Override
-	public String toString() {
-		return "Bird [name=" + name + ", isFemale=" + isFemale + ", weight=" + weight + ", dateOfBirth=" + dateOfBirth
-				+ ", countOfColors=" + countOfColors + ", id=" + id + "]";
-	}
 
 	private String name;
 	private boolean isFemale;
 	private double weight;
 	private String  dateOfBirth;
 	private int countOfColors;
+    private List<Toy> toyList = new ArrayList<Toy>();
+    private Tail tail;
 	
 	
 	public Bird() {
@@ -38,6 +40,16 @@ public class Bird {
 		this.dateOfBirth = dateOfBirth;
 		this.countOfColors = countOfColors;
 	}
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public Bird(String name) {
 		super();
 		this.name = name;
@@ -66,18 +78,38 @@ public class Bird {
 	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 	public int getCountOfColors() {
 		return countOfColors;
 	}
 
 	public void setCountOfColors(int countOfColors) {
 		this.countOfColors = countOfColors;
+	}
+	
+	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    public List<Toy> getToyList() {
+        return toyList;
+    }
+
+    public void setToyList(List<Toy> toyList) {
+        this.toyList = toyList;
+    }
+
+    @OneToOne(fetch = FetchType.LAZY)
+    public Tail getTail() {
+        return tail;
+    }
+
+    public void setTail(Tail tail) {
+        this.tail = tail;
+    }
+	
+
+	@Override
+	public String toString() {
+		return "Bird [name=" + name + ", isFemale=" + isFemale + ", weight=" + weight + ", dateOfBirth=" + dateOfBirth
+				+ ", countOfColors=" + countOfColors + ", id=" + id + "]";
 	}
 	
 }
