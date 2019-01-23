@@ -1,6 +1,7 @@
 Zadanie z transakcjami
 
-Aby zainicjować działanie programu należy:
-1. Uruchomić skrypt runSQLDBServer.sh
+Należy:
+1. Uruchomić z poziomu katalogu projektu skrypt ./db/runSQLDBServer.sh
 2. Uruchomić program Main
-3. Następnie w innym terminalu uruchomić runSQLDBClient.sh
+3. Następnie w innym terminalu z poziomu katalogu projektu uruchomić ./db/runSQLDBClient.sh
+4. Testy: src/main/java/aformela/zad03/test/BirdServiceTest.java
