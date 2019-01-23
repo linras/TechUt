@@ -1,6 +1,7 @@
 Zadanie z modelowaniem dziedziny
 
-Aby zainicjować działanie programu należy:
-1. Uruchomić skrypt runSQLDBServer.sh
-2. Uruchomić program Main
-3. Następnie w innym terminalu uruchomić runSQLDBClient.sh
+Należy:
+1. Uruchomić z poziomu katalogu projektu skrypt ./scripts/runSQLDBServer.sh
+2. Z poziomu katalogu projektu: mvn test
+3. Następnie w innym terminalu uruchomić ./scripts/runSQLDBClient.sh
+4. Testy: src/test/.../BirdManagerTest.java
