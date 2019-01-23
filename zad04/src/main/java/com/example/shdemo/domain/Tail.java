@@ -1,11 +1,17 @@
-package aformela.zad04.domain;
+package com.example.shdemo.domain;
 
-//kazdy ptak ma swoj ogonek 1--do--1
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
+
+@NamedQueries({
+	@NamedQuery(name = "tail.findAll", query = "Select t from Tail t"),
+	@NamedQuery(name = "tail.findById", query = "Select t from Tail t where t.id = :id")
+})
 @Entity
 public class Tail {
 
@@ -13,7 +19,12 @@ public class Tail {
     private String name;
     private String description;
 
-    @Id
+    public Tail(String name, String descr) {
+		this.name = name;
+		this.description = descr;
+	}
+
+	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
         return id;
