@@ -1,3 +1,1 @@
-# TechUt
-Antonina Formela
-Technologie utrwalania
+# Technologie utrwalania Java
